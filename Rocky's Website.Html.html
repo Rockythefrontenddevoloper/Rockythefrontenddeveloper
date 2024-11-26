@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rocky Lets Go!</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+  }
+  h1 {
+    color: #2c3e50;
+  }
+  img {
+    max-width: 300px;
+    border: 2px solid #2c3e50;
+  }
+  ul {
+    list-style-type: square;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+</style>
+  </head>
+  <body>
+    <h1>ROCKY GEROME ROYO MADRONAL</h1>
+    <p>My Hobbies are</p>
+  <li>Playing Basketball</li>
+  <li>Mountain Biking</li>
+  <li>Playing Mobile and Computer Games</li>
+<h2 id="hobbyHeading">My Favorite Hobbies</h2>
+<button onclick="changeHeading()">Change Heading</button>
+
+<script>
+  function changeHeading() {
+    document.getElementById("hobbyHeading").innerText = "My New Favorite Hobbies";
+  }
+</script>
+
+<button onclick="showMessage()">Click Me</button>
+
+<script>
+  function showMessage() {
+    alert("Uto2x ka! HAHAHAHAHAHA");
+  }
+
+</script>
+<a href="https://www.linkedin.com/in/rocky-gerome-madronal/">My linkedin Profile</a>
+<img src="myimage.jpg" alt="My Desktop Image">
+
+<h2>Contact Me</h2>
+<form onsubmit="showFormMessage(event)">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+  
+  <label for="email">Your Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+  
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  function showFormMessage(event) {
+    event.preventDefault(); // Prevents the form from submitting
+    const name = document.getElementById("name").value;
+    alert(`Thank you, ${name || "Guest"}! We’ll contact you soon.`);
+  }
+</script>
+
+
+  </body>
+</html>
