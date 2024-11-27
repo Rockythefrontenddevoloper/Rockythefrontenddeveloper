@@ -3,10 +3,6 @@
   <head>
      <title>Rocky Lets Go!</title>
 <style>
-  body {
-  background: url('fallback-image.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
 
  body {
   background: linear-gradient(0deg, #ffcc88, #ff99cc, #88ccff, #003366);
@@ -14,8 +10,25 @@
   animation: auroraMove 10s ease infinite;
   min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Playfair Display, sans-serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center; 
+  background-size: 400% 400%;
+  animation: auroraMove 10s ease infinite;
+  min-height: 100vh;
+}
+
 
   h1 {
     color: #2c3e50;
@@ -25,7 +38,7 @@
     border: 2px solid #2c3e50;
   }
   ul {
-    list-style-type: square;
+    list-style-type: triangle;
     padding: 0;
     text-align: left;
     display: inline-block;
@@ -73,7 +86,7 @@
   function showFormMessage(event) {
     event.preventDefault(); // Prevents the form from submitting
     const name = document.getElementById("name").value;
-    alert(`Thank you, ${name || "Guest"}! We’ll contact you soon.`);
+    alert(`Boang kaw, ${name || "Guest"}! Na hack na imu accounts change pass na.`);
   }
 </script>
 
