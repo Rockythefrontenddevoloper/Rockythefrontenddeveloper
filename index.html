@@ -4,12 +4,26 @@
     <title>Rocky Lets Go!</title>
 <style>
  body {
-  background: linear-gradient(to bottom, #ffcc88, #ff99cc, #88ccff, #003366);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(0deg, #ffcc88, #ff99cc, #88ccff, #003366);
+  background-size: 400% 400%;
+  animation: auroraMove 10s ease infinite;
   min-height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+@keyframes auroraMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
   h1 {
     color: #2c3e50;
