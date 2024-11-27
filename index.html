@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
      <title>Rocky Lets Go!</title>
 <style>
+  
 
  body {
   background: linear-gradient(0deg, #ffcc88, #ff99cc, #88ccff, #003366);
@@ -10,47 +13,56 @@
   animation: auroraMove 10s ease infinite;
   min-height: 100vh;
   margin: 0;
-  font-family: Playfair Display, sans-serif;
-}
-
-body {
-  margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   color: #fff;
 
   display: flex;
   justify-content: center; 
   align-items: center; 
-  height: 100vh; 
-  text-align: center; 
-  background-size: 400% 400%;
-  animation: auroraMove 10s ease infinite;
-  min-height: 100vh;
+  text-align: center;
 }
+@keyframes auroraMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
 
 
   h1 {
     color: #2c3e50;
   }
   img {
-    max-width: 300px;
+    max-width: 100%;
+    height: auto;
     border: 2px solid #2c3e50;
   }
-  ul {
-    list-style-type: triangle;
-    padding: 0;
-    text-align: left;
-    display: inline-block;
+ ul {
+  list-style-type: square;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
   }
 </style>
   </head>
   <body>
                          <h1>ROCKY GEROME ROYO MADRONAL</h1>
-                               <p>My Hobbies are</p>
-                            <li>Playing Basketball</li>
-                               <li>Mountain Biking</li>
-                      <li>Playing Mobile and Computer Games</li>
+                               <p>My Hobbies are:</p>
+<ul>
+  <li>Playing Basketball</li>
+  <li>Mountain Biking</li>
+  <li>Playing Mobile and Computer Games</li>
+</ul>
+
                     <h2 id="hobbyHeading">My Favorite Hobbies</h2>
                <button onclick="changeHeading( )">Change Heading</button>
 
